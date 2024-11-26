@@ -39,7 +39,6 @@
             this.tbSpecial = new System.Windows.Forms.TextBox();
             this.tbPhone = new System.Windows.Forms.TextBox();
             this.tbAdresa = new System.Windows.Forms.TextBox();
-            this.tbRozryad = new System.Windows.Forms.TextBox();
             this.tbName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,6 +50,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.isSayt = new System.Windows.Forms.CheckBox();
+            this.tbRozryad = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.tbRozryad)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -61,10 +62,9 @@
             // 
             // btnGoback
             // 
-            this.btnGoback.Location = new System.Drawing.Point(605, 253);
-            this.btnGoback.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGoback.Location = new System.Drawing.Point(454, 206);
             this.btnGoback.Name = "btnGoback";
-            this.btnGoback.Size = new System.Drawing.Size(100, 30);
+            this.btnGoback.Size = new System.Drawing.Size(75, 24);
             this.btnGoback.TabIndex = 22;
             this.btnGoback.Text = "Закрити";
             this.btnGoback.UseVisualStyleBackColor = true;
@@ -72,10 +72,9 @@
             // 
             // btnSaveinfo
             // 
-            this.btnSaveinfo.Location = new System.Drawing.Point(493, 253);
-            this.btnSaveinfo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSaveinfo.Location = new System.Drawing.Point(370, 206);
             this.btnSaveinfo.Name = "btnSaveinfo";
-            this.btnSaveinfo.Size = new System.Drawing.Size(100, 30);
+            this.btnSaveinfo.Size = new System.Drawing.Size(75, 24);
             this.btnSaveinfo.TabIndex = 21;
             this.btnSaveinfo.Text = "Зберегти";
             this.btnSaveinfo.UseVisualStyleBackColor = true;
@@ -84,182 +83,173 @@
             // cbFormaVlasnosty
             // 
             this.cbFormaVlasnosty.FormattingEnabled = true;
-            this.cbFormaVlasnosty.Location = new System.Drawing.Point(212, 178);
-            this.cbFormaVlasnosty.Margin = new System.Windows.Forms.Padding(4);
+            this.cbFormaVlasnosty.Location = new System.Drawing.Point(159, 145);
             this.cbFormaVlasnosty.Name = "cbFormaVlasnosty";
-            this.cbFormaVlasnosty.Size = new System.Drawing.Size(491, 24);
+            this.cbFormaVlasnosty.Size = new System.Drawing.Size(369, 21);
             this.cbFormaVlasnosty.TabIndex = 20;
             // 
             // cbPoslygu
             // 
             this.cbPoslygu.FormattingEnabled = true;
-            this.cbPoslygu.Location = new System.Drawing.Point(212, 145);
-            this.cbPoslygu.Margin = new System.Windows.Forms.Padding(4);
+            this.cbPoslygu.Location = new System.Drawing.Point(159, 118);
             this.cbPoslygu.Name = "cbPoslygu";
-            this.cbPoslygu.Size = new System.Drawing.Size(491, 24);
+            this.cbPoslygu.Size = new System.Drawing.Size(369, 21);
             this.cbPoslygu.TabIndex = 19;
             // 
             // tbDaysWork
             // 
-            this.tbDaysWork.Location = new System.Drawing.Point(464, 108);
-            this.tbDaysWork.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDaysWork.Location = new System.Drawing.Point(348, 88);
             this.tbDaysWork.Name = "tbDaysWork";
-            this.tbDaysWork.Size = new System.Drawing.Size(239, 22);
+            this.tbDaysWork.Size = new System.Drawing.Size(180, 20);
             this.tbDaysWork.TabIndex = 18;
             // 
             // tbTimeWork
             // 
-            this.tbTimeWork.Location = new System.Drawing.Point(136, 108);
-            this.tbTimeWork.Margin = new System.Windows.Forms.Padding(4);
+            this.tbTimeWork.Location = new System.Drawing.Point(102, 88);
             this.tbTimeWork.Name = "tbTimeWork";
-            this.tbTimeWork.Size = new System.Drawing.Size(215, 22);
+            this.tbTimeWork.Size = new System.Drawing.Size(162, 20);
             this.tbTimeWork.TabIndex = 17;
             // 
             // tbSpecial
             // 
-            this.tbSpecial.Location = new System.Drawing.Point(464, 76);
-            this.tbSpecial.Margin = new System.Windows.Forms.Padding(4);
+            this.tbSpecial.Location = new System.Drawing.Point(348, 62);
             this.tbSpecial.Name = "tbSpecial";
-            this.tbSpecial.Size = new System.Drawing.Size(239, 22);
+            this.tbSpecial.Size = new System.Drawing.Size(180, 20);
             this.tbSpecial.TabIndex = 16;
             // 
             // tbPhone
             // 
-            this.tbPhone.Location = new System.Drawing.Point(464, 47);
-            this.tbPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.tbPhone.Location = new System.Drawing.Point(348, 38);
             this.tbPhone.Name = "tbPhone";
-            this.tbPhone.Size = new System.Drawing.Size(239, 22);
+            this.tbPhone.Size = new System.Drawing.Size(180, 20);
             this.tbPhone.TabIndex = 15;
             // 
             // tbAdresa
             // 
-            this.tbAdresa.Location = new System.Drawing.Point(136, 47);
-            this.tbAdresa.Margin = new System.Windows.Forms.Padding(4);
+            this.tbAdresa.Location = new System.Drawing.Point(102, 38);
             this.tbAdresa.Name = "tbAdresa";
-            this.tbAdresa.Size = new System.Drawing.Size(215, 22);
+            this.tbAdresa.Size = new System.Drawing.Size(162, 20);
             this.tbAdresa.TabIndex = 14;
-            // 
-            // tbRozryad
-            // 
-            this.tbRozryad.Location = new System.Drawing.Point(136, 76);
-            this.tbRozryad.Margin = new System.Windows.Forms.Padding(4);
-            this.tbRozryad.Name = "tbRozryad";
-            this.tbRozryad.Size = new System.Drawing.Size(215, 22);
-            this.tbRozryad.TabIndex = 13;
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(87, 15);
-            this.tbName.Margin = new System.Windows.Forms.Padding(4);
+            this.tbName.Location = new System.Drawing.Point(65, 12);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(616, 22);
+            this.tbName.Size = new System.Drawing.Size(463, 20);
             this.tbName.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(15, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 16);
+            this.label1.Size = new System.Drawing.Size(43, 15);
             this.label1.TabIndex = 23;
             this.label1.Text = "Назва";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 85);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(15, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 16);
+            this.label2.Size = new System.Drawing.Size(49, 15);
             this.label2.TabIndex = 24;
             this.label2.Text = "Розряд";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(387, 55);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(290, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 16);
+            this.label3.Size = new System.Drawing.Size(60, 15);
             this.label3.TabIndex = 25;
             this.label3.Text = "Телефон";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(360, 85);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(270, 69);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 16);
+            this.label4.Size = new System.Drawing.Size(86, 15);
             this.label4.TabIndex = 26;
             this.label4.Text = "Спеціалізація";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 117);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(15, 95);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 16);
+            this.label5.Size = new System.Drawing.Size(94, 15);
             this.label5.TabIndex = 27;
             this.label5.Text = "Години роботи";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(373, 117);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(280, 95);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 16);
+            this.label6.Size = new System.Drawing.Size(71, 15);
             this.label6.TabIndex = 28;
             this.label6.Text = "Дні роботи";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(20, 154);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(15, 125);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(180, 16);
+            this.label7.Size = new System.Drawing.Size(158, 15);
             this.label7.TabIndex = 29;
             this.label7.Text = "Перелік надаваних послуг";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(20, 182);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(15, 148);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 16);
+            this.label8.Size = new System.Drawing.Size(115, 15);
             this.label8.TabIndex = 30;
             this.label8.Text = "Форма властності";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(20, 50);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(15, 41);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(55, 16);
+            this.label9.Size = new System.Drawing.Size(48, 15);
             this.label9.TabIndex = 31;
             this.label9.Text = "Адреса";
             // 
             // isSayt
             // 
             this.isSayt.AutoSize = true;
-            this.isSayt.Location = new System.Drawing.Point(23, 212);
+            this.isSayt.Location = new System.Drawing.Point(18, 194);
+            this.isSayt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.isSayt.Name = "isSayt";
-            this.isSayt.Size = new System.Drawing.Size(72, 20);
+            this.isSayt.Size = new System.Drawing.Size(67, 19);
             this.isSayt.TabIndex = 32;
             this.isSayt.Text = "Є сайт";
             this.isSayt.UseVisualStyleBackColor = true;
             // 
+            // tbRozryad
+            // 
+            this.tbRozryad.Location = new System.Drawing.Point(102, 63);
+            this.tbRozryad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbRozryad.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.tbRozryad.Name = "tbRozryad";
+            this.tbRozryad.Size = new System.Drawing.Size(161, 20);
+            this.tbRozryad.TabIndex = 33;
+            this.tbRozryad.ValueChanged += new System.EventHandler(this.tbRozryad_ValueChanged);
+            // 
             // AddForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 296);
+            this.ClientSize = new System.Drawing.Size(563, 252);
+            this.Controls.Add(this.tbRozryad);
             this.Controls.Add(this.isSayt);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -279,12 +269,11 @@
             this.Controls.Add(this.tbSpecial);
             this.Controls.Add(this.tbPhone);
             this.Controls.Add(this.tbAdresa);
-            this.Controls.Add(this.tbRozryad);
             this.Controls.Add(this.tbName);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddForm";
             this.Text = "Підриємство";
             this.Load += new System.EventHandler(this.AddForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tbRozryad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,7 +291,6 @@
         private System.Windows.Forms.TextBox tbSpecial;
         private System.Windows.Forms.TextBox tbPhone;
         private System.Windows.Forms.TextBox tbAdresa;
-        private System.Windows.Forms.TextBox tbRozryad;
         private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -314,5 +302,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckBox isSayt;
+        private System.Windows.Forms.NumericUpDown tbRozryad;
     }
 }

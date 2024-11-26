@@ -19,6 +19,8 @@ namespace Kursova
             InitializeCustomComponents();
             Enterprise = new Enterprise();
         }
+
+
         public AddForm(Enterprise enterprise) : this()
         {
             Enterprise = enterprise;
@@ -26,7 +28,7 @@ namespace Kursova
         }
         private void InitializeCustomComponents()
         {
-            // Додавання компонентів до форми
+   
             this.Controls.Add(tbName);
             this.Controls.Add(tbRozryad);
             this.Controls.Add(tbAdresa);
@@ -77,7 +79,7 @@ namespace Kursova
         private void LoadEnterpriseData()
         {
             tbName.Text = Enterprise.Name;
-            tbRozryad.Text = Enterprise.Rozryad;
+            tbRozryad.Value = Enterprise.Rozryad;
             tbAdresa.Text = Enterprise.Address;
             tbPhone.Text = Enterprise.Phone;
             tbSpecial.Text = Enterprise.Specialization;
@@ -90,7 +92,7 @@ namespace Kursova
         private void btnSaveinfo_Click(object sender, EventArgs e)
         {
             Enterprise.Name = tbName.Text;
-            Enterprise.Rozryad = tbRozryad.Text;
+            Enterprise.Rozryad = (int)tbRozryad.Value;
             Enterprise.Address = tbAdresa.Text;
             Enterprise.Phone = tbPhone.Text;
             Enterprise.Specialization = tbSpecial.Text;
@@ -110,6 +112,11 @@ namespace Kursova
         }
 
         private void AddForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbRozryad_ValueChanged(object sender, EventArgs e)
         {
 
         }

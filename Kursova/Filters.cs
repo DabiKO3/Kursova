@@ -12,6 +12,7 @@ namespace Kursova
     internal class Filters
     {
         private BindingList<Filter> _filters;
+        
         public BindingList<Filter> Data
         {
             get { return _filters; }

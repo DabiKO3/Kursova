@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Kursova
 {
     internal class Enterprises
     {
+      
         private BindingList<Enterprise> enterprises;
 
         public BindingList<Enterprise> Data
@@ -53,6 +57,23 @@ namespace Kursova
             }).ToList();
 
             return filteredEnterprises;
+        }
+
+   
+        public void SortEnterprises()
+        {
+            enterprises = new BindingList<Enterprise>(enterprises.OrderBy(e => e.Name).ToList());
+        }
+
+
+        public void SortEnterprisesByField(string fieldName)
+        {
+            var property = typeof(Enterprise).GetProperty(fieldName);
+            if (property != null)
+            {
+                enterprises = new BindingList<Enterprise>(
+                    enterprises.OrderBy(e => property.GetValue(e, null)).ToList());
+            }
         }
 
     }

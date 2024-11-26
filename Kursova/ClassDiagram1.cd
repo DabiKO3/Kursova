@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Kursova.DataServis">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAABQAAAIUAAAiAAAAIARAAEA=</HashCode>
+      <FileName>DataServis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kursova.EnterpriseComparer">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>EnterpriseComparer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Kursova.Enterprise">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAEAECRBgAAAAJEAAAABAAAAAABAAABAAAA=</HashCode>
+      <FileName>Enterprise.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Kursova.Enterprises">
+    <Position X="9" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAABAAAgAAAgAQAABAAAAAAAAACAIA=</HashCode>
+      <FileName>Enterprises.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kursova.Filter">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAoAA=</HashCode>
+      <FileName>Filter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kursova.FormFilters">
+    <Position X="11" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAA0AACAAAAAAAOCAAEgCAAAAoAAAAGABAAAAAAI=</HashCode>
+      <FileName>FormFilters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kursova.MainForm">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgAAwm2IAGCgABAMINCA1HaCAAhYqAACAwAFgEECCAI=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kursova.StartForm">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACAAEAAAAACAAAACAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>StartForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kursova.Filters">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAEAAAAAAAIQAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kursova.RepairEnterprise" Collapsed="true">
+    <Position X="7.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAgAAAAIA=</HashCode>
+      <FileName>RepairEnterprise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Kursova.ComparisonOperator">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Filter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

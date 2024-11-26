@@ -30,8 +30,7 @@ namespace Kursova.Servises
             }
             using (var reader = File.OpenText(PATH))
             {
-                //var fileText = reader.ReadToEnd();
-                //return JsonConvert.DeserializeObject<BindingList<Enterprise>>(fileText);
+                
                 return new List<Enterprise>();
             }
         }
@@ -58,7 +57,7 @@ namespace Kursova.Servises
                         enterprise.FormaVlasnosty + "\t" + enterprise.Specialization + "\t" +
                         enterprise.Phone + "\t" + enterprise.IsSayt.ToString() + "\t" +
                         enterprise.Address + "\t" + enterprise.DaysWork +
-                        "\t" + enterprise.TimeWork + "\t" + enterprise.Rozryad + "\t\n");
+                        "\t" + enterprise.TimeWork + "\t" + enterprise.QualitSrvices + "\t" + enterprise.Rozryad + "\t\n");
                 }
             }
             catch (Exception ex)
@@ -84,7 +83,7 @@ namespace Kursova.Servises
                 while ((s = sr.ReadLine()) != null)
                 {
                     string[] split = s.Split('\t');
-                    Enterprise enterprise = new Enterprise(split[0], split[9], split[6], split[4], split[3], split[8], split[7], split[1], split[2], bool.Parse(split[5]));
+                    Enterprise enterprise = new Enterprise(split[0], int.Parse(split[10]), split[6], split[4], split[3], split[8], split[7], split[1], split[2], bool.Parse(split[5]), double.Parse(split[9]));
 
                     enterprises.AddEnterprise(enterprise);
                 }
@@ -102,16 +101,6 @@ namespace Kursova.Servises
             return enterprises.Data;
         }
 
-        public void SaveDateBinary(object dateList)
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-
-            using (FileStream fs = new FileStream(PATH, FileMode.Create))
-            {
-                formatter.Serialize(fs, dateList);
-            }
-
-        }
 
         public BindingList<Enterprise> LoadFromXML()
         {
@@ -123,14 +112,5 @@ namespace Kursova.Servises
             }
         }
 
-        public BindingList<Enterprise> LoadFromBinary()
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-
-            using (FileStream fs = new FileStream(PATH, FileMode.Open))
-            {
-                return (BindingList<Enterprise>)formatter.Deserialize(fs);
-            }
-        }
     }
 }
